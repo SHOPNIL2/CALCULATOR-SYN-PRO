@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haji Mini Advanced Calc</title>
+<style>
+body { background-color: #0f1123; color: white; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+.calculator { background-color: #1a1c3a; padding: 20px; border-radius: 30px; width: 320px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
+.display { text-align: right; margin-bottom: 20px; padding: 10px; }
+.history { font-size: 14px; color: #717591; min-height: 20px; }
+.current { font-size: 48px; margin-top: 5px; overflow: hidden; }
+.buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+button { border: none; border-radius: 50%; height: 65px; width: 65px; font-size: 18px; font-weight: 500; cursor: pointer; transition: 0.2s; }
+.btn-func { background-color: #2a2d52; color: #8e94f2; }
+.btn-num { background-color: #2a2d52; color: white; }
+.btn-op { background-color: #3d4279; color: #8e94f2; }
+.btn-equal { background-color: #ff8fb1; color: white; border-radius: 30px; }
+button:active { transform: scale(0.9); opacity: 0.8; }
+</style>
+</head>
+<body>
+<div class="calculator">
+<div class="display">
+<div class="history" id="history">History appears here</div>
+<div class="current" id="display">0</div>
+</div>
+<div class="buttons">
+<button class="btn-func">sin</button>
+<button class="btn-func">log</button>
+<button class="btn-func">√x</button>
+<button class="btn-func">π</button>
+<button class="btn-op">AC</button>
+<button class="btn-op">( )</button>
+<button class="btn-op">%</button>
+<button class="btn-op">÷</button>
+<button class="btn-num">7</button>
+<button class="btn-num">8</button>
+<button class="btn-num">9</button>
+<button class="btn-op">×</button>
+<button class="btn-num">4</button>
+<button class="btn-num">5</button>
+<button class="btn-num">6</button>
+<button class="btn-op">-</button>
+<button class="btn-num">1</button>
+<button class="btn-num">2</button>
+<button class="btn-num">3</button>
+<button class="btn-op">+</button>
+<button class="btn-num">0</button>
+<button class="btn-num">.</button>
+<button class="btn-op">⌫</button>
+<button class="btn-equal">=</button>
+</div>
+</div>
+</body>
+</html>
